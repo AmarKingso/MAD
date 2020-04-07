@@ -56,7 +56,7 @@ public void sendMessage(View view) {
   2. 返回类型为void
   3. 只有一个```View```参数  
 
-- 使用侦听器（onClickListener）：   
+- 使用监听器（onClickListener）：   
 ```java
 // java实现
 Button button = (Button) findViewById(R.id.button_send);
@@ -66,4 +66,11 @@ button.setOnClickListener(new View.OnClickListener() {
     }
 });
 ```
-使用onClickListen实现事件响应有多种方法，这里不再赘述
+使用onClickListener实现事件响应有多种方法，这里不再赘述
+
+### 常用的Listener监听器
+- onClick()
+- onLongClickListener()
+- onTouch()
+- onFocusChange()
+- onKey()
