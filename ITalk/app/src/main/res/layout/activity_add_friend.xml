@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.widget.Toolbar
+        android:id="@+id/add_tb"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2e8abb">
+
+        <TextView
+            android:text="添加联系人"
+            style="@style/ToolBarTitleCenterStyle" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:padding="0dp"
+            android:text="查找"
+            android:textColor="@android:color/white"
+            android:background="@null"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </android.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/add_id_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/search_bar_shape"
+        android:gravity="center"
+        android:hint="用户ID"
+        android:textColor="#58565F"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/contact_info"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/add_photo_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="8dp"
+            android:src="@drawable/italk_logo"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/add_nick_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginVertical="8dp"
+            android:layout_marginLeft="70dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/add_friend_btn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:layout_marginRight="10dp"
+            android:padding="0dp"
+            android:text="添加"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

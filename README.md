@@ -1,2 +1,0 @@
-# MAD
-To learn MAD
